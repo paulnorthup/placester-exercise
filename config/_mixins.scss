@@ -1,0 +1,27 @@
+/* Custom Mixins */
+
+@mixin dot {
+  background-color: #b51d15;
+  text-decoration: none;
+  @include background-image(linear-gradient(bottom, rgb(151, 19, 12) 24%, rgb(181, 29, 21) 82%));
+  background-image: -ms-linear-gradient(bottom, rgb(151, 19, 12) 24%, rgb(181, 29, 21) 82%);
+  @include box-shadow(rgba(50, 50, 50, 0.3) 0px 1px 1px 1px);
+  @include border-radius(14px);
+  width: 28px;
+  height: 28px;
+  color: white;
+  padding: 5px 0 0;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  z-index: 999;
+  margin-bottom: -31px;
+}
+
+@mixin dashed-border($dashlength, $spacelength, $borderwidth, $color, $position: top) {
+  $per: percentage($dashlength / ($dashlength + $spacelength));
+  background-image: linear-gradient(to right, $color 0%, $color $per, rgba(0, 0, 0, 0) $per);
+  background-position: 0 $position;
+  background-size: ($dashlength + $spacelength) $borderwidth;
+  background-repeat: repeat-x;
+}

@@ -1,0 +1,139 @@
+@import 'config';
+@import 'components';
+
+body {
+ background: $white;
+}
+
+//Layout
+section {
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+//Header
+#Header {
+  .container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+  }
+  .Information {
+    margin-top: 36px;
+    text-align: right;
+  }
+  a.tel {
+    margin-top: 18px;
+    font-size: $h4-font-size;
+    color: $highlight;
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+nav.horizontal {
+  margin: 12px 0 16px;
+  a {
+    margin-left: 1.5em;
+    color: $medium-grey;
+    font-weight: 600;
+    &:hover {
+      color: $highlight;
+    }
+  }
+}
+
+// Hero
+#Hero {
+  background-image: url('../public/photo-birds.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.HeroNav {
+  width: 100%;
+  background: rgba(0,0,0,.75);
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    color: $white;
+    font-family: $title-font-family;
+    font-size: $h2-font-size;
+    font-weight: 100;
+    padding: .5em 1em .5em 0;
+  }
+  .icon {
+    font-size: $h4-font-size;
+    color: $white;
+  }
+}
+
+.SlideArrows {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .SlideArrows-Right {
+    height: 90px;
+    width: 50px;
+    background: rgba(0,0,0,.75);
+    border-radius: 5px 0 0 5px;
+    &:hover {
+      background: rgba(20,20,20,.5);
+    }
+  }
+  .SlideArrows-Left {
+    height: 90px;
+    width: 50px;
+    background: rgba(0,0,0,.75);
+    border-radius: 0 5px 5px 0px;
+    &:hover {
+      background: rgba(20,20,20,.5);
+    }
+  }
+}
+
+//Account management block
+.Account {
+  // specific styles
+  background: $light-grey;
+  border-radius: 0 0 5px 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+
+  // component overides for specific implementation
+  .Media {
+    margin-bottom: .5em;
+  }
+  .Media-figure {
+    margin-right: .25em;
+  }
+
+  // link style overrides
+  a {
+    font-size: $small-font-size;
+  }
+}

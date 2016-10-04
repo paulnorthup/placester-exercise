@@ -1,0 +1,21 @@
+{
+  "name": "component-library",
+  "version": "0.0.0",
+  "authors": [
+    "Paul <paul@paulnorthup.com>"
+  ],
+  "description": "Reusable components for styling",
+  "main": "_components.scss",
+  "license": "MIT",
+  "homepage": "https://github.com/paulnorthup/component-library",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "fontawesome": "~4.2.0"
+  }
+}

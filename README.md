@@ -4,14 +4,14 @@
 
 Install slim
 
-``` gem install slim
+``` gem install slim ```
 
 With gulp installed, you should be able to run
 
-``` npm install
+``` npm install ```
 
 and
 
-``` gulp
+``` gulp ```
 
 and everything should spin up alright.
